@@ -11,7 +11,7 @@ public class HelloWorld implements SparkApplication {
 	public void init() {
 	
 		get("/", (req, res) -> "Goodbye World");
-		get("/hello", (req, res) -> "Hello World");
+		get("/hello", (req, res) -> "Hello World Kikoulol cç marche");
 		get("/test", (req, res) -> "Kikoulol");
 
 	}
