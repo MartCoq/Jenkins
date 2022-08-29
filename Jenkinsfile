@@ -23,7 +23,7 @@ pipeline {
       steps {
         sh '''
 
-rm -r /var/lib/tomcat9/webapps/spark*'''
+sudo rm -r /var/lib/tomcat9/webapps/spark*'''
         sh 'cp target/*.war /var/lib/tomcat9/webapps/spark.war'
       }
     }
