@@ -18,7 +18,7 @@ pipeline {
         }
 	stage('Post Build'){
 	    steps {
-		archiveArtifacts artifacts: 'targer/*.war', followSymlinks: false
+		archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
 	    }
 	}
         stage('Deploy') { 
