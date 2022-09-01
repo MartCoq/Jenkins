@@ -1,5 +1,5 @@
 pipeline {
-    agent label MI6 
+    agent {agent1}
     stages {
         stage('Build') { 
             steps {
