@@ -18,7 +18,7 @@ pipeline {
 	}
         stage('Deploy') { 
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'be484bd1-5669-4fcd-b29d-4c41588d7934', path: '', url: 'http://localhost:8080/')], contextPath: '/spark', war: '*/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'be484bd1-5669-4fcd-b29d-4c41588d7934', path: '', url: 'http://172.17.0.3:8080/')], contextPath: '/spark', war: '*/*.war'
             }
         }
     }
